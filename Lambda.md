@@ -9,6 +9,24 @@ That parameter (RAM) is also configurable in aws lambda.
   So that means customer charge based on the allocated memory and the amount of the execution time the function finished.
 AWS Lambda's entire infrastructure layer is managed by AWS.
 
+# AWS Billing
+ We only pay for the compute time and there is no charge when your code is not running. Lambda Billing is based on used memory. The number of requests and the execution duration rounded up the nearest 100 millisecond.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 References:
 https://www.udemy.com/course/aws-serverless-microservices-lambda-eventbridge-sqs-apigateway/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.US&utm_content=deal4584&utm_term=_._ag_81829991707_._ad_532193842025_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9002065_._pd__._&matchtype=&gclid=EAIaIQobChMI1JyJ5-nW_gIV2pDVCh0TxQhOEAAYAiAAEgJmfvD_BwE
