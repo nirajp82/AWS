@@ -1,4 +1,6 @@
 # What is AWS Lambda
+![image](https://user-images.githubusercontent.com/61636643/235695984-e7408522-559c-471c-a10c-877f30a7c9d8.png)
+
 
 # How does AWS Lambda Works?
   Each lambda function run in its own container, So we can think every lambda function as a standalone docker containers. When a function is created, Lambda packages it into a new container and then executes that container on a multi-region cloud clusters of servers managed by AWS. Before the functions start running, Each functions container is allocated its necessary RAM and CPU capacity.
