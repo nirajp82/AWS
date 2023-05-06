@@ -1,4 +1,5 @@
 # What is AWS Lambda
+AWS Lambda is a compute service that lets you run code without provisioning or managing servers.
 
 ![image](https://user-images.githubusercontent.com/61636643/235695984-e7408522-559c-471c-a10c-877f30a7c9d8.png)
 
