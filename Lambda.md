@@ -18,6 +18,10 @@ AWS Lambda's entire infrastructure layer is managed by AWS.
   * Lambda Asynchronous Invocation
   * Lambda Event Source Mapping with Polling Invocation
 
+# Key Concepts of AWS Lambda
+  * A trigger is a resource or configuration that invokes a Lambda function. Triggers include AWS services that you can configure to invoke a function.
+  * Event source mappings: An event source mapping is a resource in Lambda that reads items from a stream or queue and invokes a a function.
+
 # AWS Billing
  We only pay for the compute time and there is no charge when your code is not running. Lambda Billing is based on used memory. The number of requests and the execution duration rounded up the nearest 100 millisecond.
 
