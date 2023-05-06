@@ -13,6 +13,11 @@ That parameter (RAM) is also configurable in aws lambda.
   So that means customer charge based on the allocated memory and the amount of the execution time the function finished.
 AWS Lambda's entire infrastructure layer is managed by AWS.
 
+# AWS Lambda has 3 Invocation Types.
+  * Lambda Synchronous Invocation 
+  * Lambda Asynchronous Invocation
+  * Lambda Event Source Mapping with Polling Invocation
+
 # AWS Billing
  We only pay for the compute time and there is no charge when your code is not running. Lambda Billing is based on used memory. The number of requests and the execution duration rounded up the nearest 100 millisecond.
 
