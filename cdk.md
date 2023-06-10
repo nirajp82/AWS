@@ -32,8 +32,10 @@
 * **Stacks**: The unit of deployment in the AWS CDK is called a stack. All AWS resources defined within the scope of a stack, either directly or indirectly, are provisioned as a single unit.
 
     Because AWS CDK stacks are implemented through AWS CloudFormation stacks, they have the same limitations as in AWS CloudFormation.
-
-
+    
+    
+    
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 References: 
 https://docs.aws.amazon.com/cdk/
