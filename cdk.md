@@ -25,19 +25,28 @@
   
   A construct can represent a single AWS resource, such as an Amazon Simple Storage Service (Amazon S3) bucket. A construct can also be a higher-level abstraction consisting of multiple related AWS resources. Examples of such components include a worker queue with its associated compute capacity, or a scheduled job with monitoring resources and a dashboard.
   
+  * Representations of AWS resources
+  * Can form a hierarchical tree structure
+
   The AWS CDK includes the AWS Construct Library, which contains constructs representing AWS resources.
   
+  ![image](https://github.com/nirajp82/AWS/assets/61636643/801e368a-7710-4f7d-a330-8996c4987ac4)
+
 * **Apps**: All constructs that represent AWS resources must be defined, directly or indirectly, within the scope of a Stack construct. An App is a container for one or more stacks.  App is represented by the AWS CDK class App. 
+  * Executable program
+  * Used to render and deploy cfn templates 
 
 * **Stacks**: The unit of deployment in the AWS CDK is called a stack. All AWS resources defined within the scope of a stack, either directly or indirectly, are provisioned as a single unit.
-
+  *  Deployable unit
+  *  Knows about region and account
+  
     Because AWS CDK stacks are implemented through AWS CloudFormation stacks, they have the same limitations as in AWS CloudFormation.   
 # Lifecycle of the CDK Application.
-The following diagram shows the phases that the AWS CDK goes through when you call the cdk deploy. This command deploys the resources that your app defines.
-
-![image](https://github.com/nirajp82/AWS/assets/61636643/c2239816-61cf-405b-9e02-4c9de7dad948)
-![image](https://github.com/nirajp82/AWS/assets/61636643/85a07a1b-ab69-4851-bbce-10f35300c6c6)
-
+  * CDK (with help of AWS CLI) compiles its 'App' (App is the executable program that contains Stacks and Constructs 
+  * CDK synthesizes the code to convert it into CloudFormation template. When you run cdk deploy the code we placed in lib/<code_name>.ts is parsed by the CDK Framework which then generates a CloudFormation template located in the cdk.out folder and finally deploys it to CloudFormation.
+  * CloudFormation template gets deployed in AWS account and runs to create all the AWS components
+  
+![image](https://github.com/nirajp82/AWS/assets/61636643/fc50b497-5ba6-4204-855e-98e05bd34db6)
 
     
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
@@ -47,6 +56,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 References: 
 https://docs.aws.amazon.com/cdk/
+https://dev.to/aws-builders/everything-about-aws-cdk-489m
 
 
 
