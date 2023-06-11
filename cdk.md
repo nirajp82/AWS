@@ -47,6 +47,8 @@
   * CloudFormation template gets deployed in AWS account and runs to create all the AWS components
   
 ![image](https://github.com/nirajp82/AWS/assets/61636643/fc50b497-5ba6-4204-855e-98e05bd34db6)
+![image](https://github.com/nirajp82/AWS/assets/61636643/a814d385-14c4-4201-9df9-86fd06801517)
+
 
     
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
@@ -57,6 +59,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 References: 
 https://docs.aws.amazon.com/cdk/
 https://dev.to/aws-builders/everything-about-aws-cdk-489m
+https://docs.aws.amazon.com/cdk/v2/guide/apps.html
 
 
 
