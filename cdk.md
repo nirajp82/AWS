@@ -11,11 +11,13 @@
 ### CDK
 * `cdk init app --language typescript`: Initialise the code
 * `cdk ls`: List the different stacks
-* `cdk bootstrap`: cdk bootstrap is a tool in the AWS CDK that is responsible for populating a given environment (environment = a combination of AWS account and region) with resources required by the CDK to perform deployments into that environment.
+* `cdk bootstrap`: Bootstrapping is the process of provisioning resources for the AWS CDK before you can deploy AWS CDK apps into an AWS environment. (An AWS environment is a combination of an AWS account and Region).
     
-    When you run cdk bootstrap cdk deploys the CDK toolkit stack into an AWS environment.
+    When you run cdk bootstrap, cdk deploys the CDK toolkit stack into an AWS environment. The first time you deploy an AWS CDK app into an environment (account/region), you'll need to install a "bootstrap stack". 
   
-    The bootstrap command creates a CloudFormation stack in the environment passed on the command line. Currently, the only resource in that stack is An S3 bucket that holds the file assets and the resulting CloudFormation template to deploy.
+    The bootstrap command creates a CloudFormation stack in the environment passed on the command line.
+    
+    If you want to deploy to multiple environments (different AWS accounts or different Regions in the same account), each environment must be bootstrapped separately.
     
 * `cdk synth $STACK_NAME`: See what the Cloudformation template will look like
 * `cdk diff $STACK_NAME`: Check the diff between what is currently deployed and what is currently declared in the code
