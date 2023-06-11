@@ -36,6 +36,8 @@
 The following diagram shows the phases that the AWS CDK goes through when you call the cdk deploy. This command deploys the resources that your app defines.
 
 ![image](https://github.com/nirajp82/AWS/assets/61636643/c2239816-61cf-405b-9e02-4c9de7dad948)
+![image](https://github.com/nirajp82/AWS/assets/61636643/85a07a1b-ab69-4851-bbce-10f35300c6c6)
+
 
     
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
