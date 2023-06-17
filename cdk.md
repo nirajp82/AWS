@@ -18,6 +18,10 @@
     The bootstrap command creates a CloudFormation stack in the environment passed on the command line.
     
     If you want to deploy to multiple environments (different AWS accounts or different Regions in the same account), each environment must be bootstrapped separately.
+
+    AWS CDK is a one-time setup step that prepares AWS account for seamless usage of CDK for deploying and managing your cloud resources.
+
+    AWS CDK creates a special CloudFormation stack called the "bootstrap stack." This stack contains resources like an S3 bucket (To store asset file such as Lambda function code or static website files) and an AWS Identity and Access Management (IAM) role (This role grants CDK the necessary permissions to create and manage resources on your behalf). These resources are necessary for CDK to operate smoothly.
     
 * `cdk synth $STACK_NAME`: See what the Cloudformation template will look like
 * `cdk diff $STACK_NAME`: Check the diff between what is currently deployed and what is currently declared in the code
