@@ -10,6 +10,7 @@
 
 ### CDK
 * `cdk init app --language typescript`: Initialise the code
+* `cdk init list`: View a list of the available templates
 * `cdk ls`: List the different stacks
 * `cdk bootstrap`: Bootstrapping is the process of provisioning resources for the AWS CDK before you can deploy AWS CDK apps into an AWS environment. (An AWS environment is a combination of an AWS account and Region).
     
