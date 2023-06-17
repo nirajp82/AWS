@@ -73,6 +73,7 @@ References:
 https://docs.aws.amazon.com/cdk/
 https://dev.to/aws-builders/everything-about-aws-cdk-489m
 https://docs.aws.amazon.com/cdk/v2/guide/apps.html
+https://cdkpatterns.com/
 
 
 
