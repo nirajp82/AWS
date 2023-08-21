@@ -1,0 +1,4 @@
+* Connect to EC2 insance using SSH
+  `ssh -i "My.pem" ec2-user@ec2-12-345-67-890.compute-1.amazonaws.com`
+*  logs you into root with the root environment `sudo su`
+*  install nginx on the server `sudo amazon-linux-extras install nginx1` 
