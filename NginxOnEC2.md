@@ -4,3 +4,7 @@
 *  install nginx on the server `sudo amazon-linux-extras install nginx1`
 *  Check the status of Nginx `systemctl status nginx`
 *  start the nginx server `sudo service nginx start`
+*  Enable Nginx service to start at boot `systemctl enable nginx`
+*  Check ersion of the nginx `nginx -V`
+*  Install Wget utility `yum -y install wget`
+
