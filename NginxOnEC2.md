@@ -13,4 +13,6 @@
 *  Disable nginx service `sudo chkconfig nginx off`
 *  Uninstall the nginx service `sudo yum remove nginx`
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
+*  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
+*  
 
