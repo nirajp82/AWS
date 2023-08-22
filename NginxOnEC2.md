@@ -2,9 +2,9 @@
   `ssh -i "My.pem" ec2-user@ec2-12-345-67-890.compute-1.amazonaws.com`
 *  logs you into root with the root environment `sudo su`
 *  install nginx on the server `sudo amazon-linux-extras install nginx1`
-*  Check the status of Nginx `systemctl status nginx`
+*  Check the status of Nginx `sudo systemctl status nginx`
 *  start the nginx server `sudo service nginx start`
-*  Enable Nginx service to start at boot `systemctl enable nginx`
+*  Enable Nginx service to start at boot `sudo systemctl enable nginx`
 *  Check ersion of the nginx `nginx -V`
 *  Install Wget utility `yum -y install wget`
 *  View nginx config file `cd /etc/nginx` `ls` `nano nginx.conf`
