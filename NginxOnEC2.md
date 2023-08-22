@@ -8,4 +8,7 @@
 *  Check ersion of the nginx `nginx -V`
 *  Install Wget utility `yum -y install wget`
 *  View nginx config file `cd /etc/nginx` `ls` `nano nginx.conf`
+*  Stop the nginx service `sudo service nginx stop`
+*  Disable nginx service `sudo chkconfig nginx off`
+*  Uninstall the nginx service `sudo yum remove nginx`
 
