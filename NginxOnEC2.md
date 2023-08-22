@@ -7,4 +7,5 @@
 *  Enable Nginx service to start at boot `systemctl enable nginx`
 *  Check ersion of the nginx `nginx -V`
 *  Install Wget utility `yum -y install wget`
+*  View nginx config file `cd /etc/nginx` `ls` `nano nginx.conf`
 
