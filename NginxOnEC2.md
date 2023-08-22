@@ -11,4 +11,5 @@
 *  Stop the nginx service `sudo service nginx stop`
 *  Disable nginx service `sudo chkconfig nginx off`
 *  Uninstall the nginx service `sudo yum remove nginx`
+*  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 
