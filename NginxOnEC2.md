@@ -7,6 +7,7 @@
 *  Restart the nginx service `sudo systemctl restart nginx`
 *  Enable Nginx service to start at boot `sudo systemctl enable nginx`
 *  Check ersion of the nginx `nginx -V`
+*  test the Nginx configuration for syntax errors and validity: `nginx -t`
 *  Install Wget utility `yum -y install wget`
 *  View nginx config file `cd /etc/nginx` `ls` `nano nginx.conf`
 *  Stop the nginx service `sudo service nginx stop`
