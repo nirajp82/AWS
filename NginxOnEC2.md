@@ -26,4 +26,18 @@ The command `netstat -ntlp` is a Unix-like operating system command used to disp
 
 When you run the command `netstat -ntlp`, it shows a list of all listening TCP ports along with the associated process IDs, without performing DNS lookups for hostnames. This information is valuable for monitoring network activity and identifying which processes are using particular ports on your system.
 
+* `yum whatprovides 'FEATURENAME'`:
+  - `YUM` (Yellowdog Updater, Modified) package manager to query the package repositories and find out which package provides a particular file or feature.
+  - `whatprovides`: This is a specific query command within yum that helps you find out which package provides a specific file or feature
+
+  for ex: `yum whatprovides '*/curl'`:  When executed, YUM searches its repositories to find out which package provides the curl executable. It will return information about the package(s) that contain the desired file. 
+
+ 
+  This feature is particularly useful when you need to locate packages that contain specific files, libraries, or executables, which can be important for debugging, troubleshooting, and software development tasks.
+
+
+
+
+
+  
 
