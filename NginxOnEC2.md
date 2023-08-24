@@ -17,15 +17,17 @@
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
 * `netstat -ntlp` Command
 
-The command `netstat -ntlp` is a Unix-like operating system command used to display network-related information and statistics. Let's break down the components of this command:
+    The command `netstat -ntlp` is a Unix-like operating system command used to display network-related information and statistics. Let's break down the components of this command:
 
-  - `netstat`: This is a command-line utility that provides various network-related details, such as network connections, routing tables, interface statistics, and more.
-    - `-n`: This option tells `netstat` to display numerical addresses instead of resolving hostnames. In other words, it prevents `netstat` from performing DNS lookups to convert IP addresses to hostnames.
-    - `-t`: This option specifies that `netstat` should display TCP (Transmission Control Protocol) connections and related information.
-    - `-l`: This option restricts the display to only show listening sockets, which are network sockets actively waiting for incoming connections.
-    - `-p`: This option causes `netstat` to display the process or program ID (PID) associated with each network connection. This is particularly useful for identifying which processes are utilizing specific network connections.
+    - `netstat`: This is a command-line utility that provides various network-related details, such as network connections, routing tables, interface statistics, and more.
+      - `-n`: This option tells `netstat` to display numerical addresses instead of resolving hostnames. In other words, it prevents `netstat` from performing DNS lookups to convert IP addresses to hostnames.
+      - `-t`: This option specifies that `netstat` should display TCP (Transmission Control Protocol) connections and related information.
+      - `-l`: This option restricts the display to only show listening sockets, which are network sockets actively waiting for incoming connections.
+      - `-p`: This option causes `netstat` to display the process or program ID (PID) associated with each network connection. This is particularly useful for identifying which processes are utilizing specific network 
+    connections.
 
-When you run the command `netstat -ntlp`, it shows a list of all listening TCP ports along with the associated process IDs, without performing DNS lookups for hostnames. This information is valuable for monitoring network activity and identifying which processes are using particular ports on your system.
+     When you run the command `netstat -ntlp`, it shows a list of all listening TCP ports along with the associated process IDs, without performing DNS lookups for hostnames. This information is valuable for monitoring 
+     network activity and identifying which processes are using particular ports on your system.
 
 * `yum whatprovides 'FEATURENAME'`:
   - `YUM` (Yellowdog Updater, Modified) package manager to query the package repositories and find out which package provides a particular file or feature.
