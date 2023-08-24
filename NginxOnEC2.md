@@ -12,9 +12,11 @@
 *  Stop the nginx service `sudo service nginx stop`
 *  Disable nginx service `sudo chkconfig nginx off`
 *  Uninstall the nginx service `sudo yum remove nginx`
+*  Get content of the page: `curl `
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
 * `netstat -ntlp` Command
+* `tail -f /var/log/nginx/access.log`: allows real-time monitoring of new entries added to the Nginx web server's access log file.
 
 The command `netstat -ntlp` is a Unix-like operating system command used to display network-related information and statistics. Let's break down the components of this command:
 
