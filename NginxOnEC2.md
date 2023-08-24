@@ -40,6 +40,7 @@
   This feature is particularly useful when you need to locate packages that contain specific files, libraries, or executables, which can be important for debugging, troubleshooting, and software development tasks.
 
 * `tail -f /var/log/nginx/access.log`: allows real-time monitoring of new entries added to the Nginx web server's access log file.
+* `pwd`: rint working directory
 
 
 
