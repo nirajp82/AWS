@@ -42,6 +42,7 @@
         ...
     ```
 
+*  Customize or set HTTP headers before forwarding client requests to a backend server using Nginx's reverse proxy capabilities. `proxy_set_header Host $host`
 * `netstat -ntlp` Command
 
     The command `netstat -ntlp` is a Unix-like operating system command used to display network-related information and statistics. Let's break down the components of this command:
