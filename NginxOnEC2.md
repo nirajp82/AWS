@@ -16,6 +16,21 @@
 *  Get content of the page: `curl `
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
+*  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
+
+```
+  server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        proxy_pass http://backend-server;
+        proxy_set_header X-Client-IP $remote_addr;  # Include client's real IP
+    }
+}
+
+```
+
 * `netstat -ntlp` Command
 
     The command `netstat -ntlp` is a Unix-like operating system command used to display network-related information and statistics. Let's break down the components of this command:
