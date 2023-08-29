@@ -102,6 +102,25 @@ Keep in mind that modifying SELinux modes can impact system behavior and applica
 In simple words, these commands help you check the current SELinux enforcement status and change it if needed. SELinux provides extra security to Linux systems by controlling process and user access based on security policies.
 
 
+## `ifconfig`
+
+- The `ifconfig` command is used to **configure** and **display** network interfaces on Unix-like operating systems, including Linux.
+- Running `ifconfig` without arguments provides information about all active network interfaces, including IP addresses and MAC addresses.
+- It offers a snapshot of the current network configuration, including both physical and virtual network interfaces.
+
+## `tcpdump -A -vvvv -s 9999 -i enX0 port 80 > /tmp/headers`
+
+- `tcpdump` is a **packet sniffing** tool used to **capture** and **analyze** network traffic in real-time.
+- `-A`: Prints packet content as ASCII, aiding analysis, especially for HTTP headers.
+- `-vvvv`: Increases verbosity for detailed packet information.
+- `-s 9999`: Sets the snap length to capture up to 9999 bytes of packet content.
+- `-i enX0`: Specifies the network interface to capture packets from (replace `enX0` with the actual interface name use `ifconfig` command to findout interface name).
+- `port 80`: Filters packets to capture those with destination or source port 80 (used for HTTP).
+- `> /tmp/headers`: Redirects captured packet data to a file named `headers` in the `/tmp` directory.
+
+The combined command captures network packets on the specified interface, filtering for port 80 (HTTP traffic), and stores the ASCII packet data in `/tmp/headers`. Exercise caution when capturing packets, as it may involve sensitive information and require administrative privileges.
+
+
 
 
   
