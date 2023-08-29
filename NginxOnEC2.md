@@ -42,6 +42,37 @@
 * `tail -f /var/log/nginx/access.log`: allows real-time monitoring of new entries added to the Nginx web server's access log file.
 * `pwd`: rint working directory
 
+## Enforcing Specific Policies with `setenforce`
+
+In Linux, the **`getenforce`** and **`setenforce`** commands are related to enforcing security policies, particularly in SELinux (Security-Enhanced Linux).
+
+- **`getenforce`**: This command is used to *get* or *view* the current enforcement mode of SELinux. SELinux has three possible modes:
+  - **Enforcing**: Actively enforces security policies, restricting actions that violate those policies.
+  - **Permissive**: Logs policy violations but doesn't actively enforce them, functioning as a monitoring mode.
+  - **Disabled**: Completely turns off SELinux.
+
+- **`setenforce`**: This command is used to *set* the enforcement mode of SELinux. Administrative privileges (usually via `sudo`) are required. It lets you switch between the three modes mentioned above.
+
+### Example: Enforcing Strict Policies
+
+Let's say you want to enforce strict security policies using SELinux. You can follow these steps:
+
+1. First, check the current enforcement mode:
+   ```bash
+   getenforce
+   ```
+
+2. If the current mode is not *Enforcing* and you want to enforce strict policies, you can set it to *Enforcing* using:
+   ```bash
+   sudo setenforce Enforcing
+   ```
+
+3. After setting it to *Enforcing*, SELinux will actively enforce the defined security policies.
+
+Keep in mind that modifying SELinux modes can impact system behavior and application functionality. It's important to understand the policies and implications before making changes.
+
+In simple words, these commands help you check the current SELinux enforcement status and change it if needed. SELinux provides extra security to Linux systems by controlling process and user access based on security policies.
+
 
 
 
