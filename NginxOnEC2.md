@@ -18,6 +18,7 @@
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
 *  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
 
+  - Reverse Proxy Side:
 ```
   server {
     listen 80;
@@ -30,6 +31,16 @@
 }
 
 ```
+  - Backend Server
+    ```
+      cd /etc/nginx/nginx.conf
+
+      http {
+            log_format  main  '$http_x_client_ip -> $remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+        ...
+    ```
 
 * `netstat -ntlp` Command
 
