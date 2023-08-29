@@ -3,7 +3,7 @@
 *  logs you into root with the root environment `sudo su`
 *  install nginx on the server `sudo amazon-linux-extras install nginx1` or `sudo yum install nginx`
 *  Check the status of Nginx `sudo systemctl status nginx`
-*  start the nginx server `sudo service nginx start`
+*  start the nginx server `sudo systemctl start nginx` or `sudo service nginx start`
 *  Restart the nginx service `sudo systemctl restart nginx`
 *  Enable Nginx service to start at boot `sudo systemctl enable nginx`
 *  Check ersion of the nginx `nginx -V`
