@@ -39,7 +39,7 @@
       http {
             log_format  main  '$http_x_client_ip -> $remote_addr - $remote_user [$time_local] "$request" '
                       '$status $body_bytes_sent "$http_referer" '
-                      '"$http_user_agent" "$http_x_forwarded_for"';
+                      '"$http_user_agent" "$http_x_forwarded_for" "$host"';
         ...
     ```
 
