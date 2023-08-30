@@ -120,6 +120,49 @@ In simple words, these commands help you check the current SELinux enforcement s
 
 The combined command captures network packets on the specified interface, filtering for port 80 (HTTP traffic), and stores the ASCII packet data in `/tmp/headers`. Exercise caution when capturing packets, as it may involve sensitive information and require administrative privileges.
 
+## `httpd-tools` and `ab` (Apache Bench)
+
+`httpd-tools` is a collection of utility programs that are commonly used in conjunction with the Apache HTTP Server (`httpd`). One of the tools included in this package is `ab` (Apache Bench), which is used for benchmarking and stress testing web servers.
+
+### Installation
+
+To use `ab`, you need to install the `httpd-tools` package on your system. You can do this using your package manager. Here are the commands for different types of systems:
+
+**Debian-based systems:**
+```sh
+sudo apt-get install apache2-utils
+```
+
+**Red Hat-based systems:**
+```sh
+sudo yum install httpd-tools
+```
+
+### Running `ab`
+
+After installing the package, you can run the `ab` command to simulate requests to a target web server. The basic syntax of the `ab` command is as follows:
+
+```sh
+ab [options] [http[s]://]hostname[:port]/path
+```
+
+For example, to send 1000 requests with 10 concurrent requests to a target server's root URL, you would use:
+
+```sh
+ab -n 1000 -c 10 http://example.com/
+```
+
+Where:
+- `-n` specifies the total number of requests.
+- `-c` specifies the number of concurrent requests.
+
+### Interpreting Results
+
+Once the benchmarking is complete, `ab` will provide statistics about the requests it made, including the number of successful requests, the distribution of response times, and more. This data can help you understand how your web server performs under different loads.
+
+Remember to use `ab` responsibly, as excessive requests or improper usage can impact server performance or disrupt services.
+
+Please note that while `ab` is a valuable tool, it might not perfectly replicate real-world scenarios, so it's recommended to consider other testing methods for a comprehensive performance analysis.
 
 
 
