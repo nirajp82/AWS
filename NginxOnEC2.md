@@ -70,7 +70,7 @@
 * `tail -f /var/log/nginx/access.log`: allows real-time monitoring of new entries added to the Nginx web server's access log file.
 * `pwd`: rint working directory
 
-## Enforcing Specific Policies with `setenforce`
+*  ## Enforcing Specific Policies with `setenforce`
 
 In Linux, the **`getenforce`** and **`setenforce`** commands are related to enforcing security policies, particularly in SELinux (Security-Enhanced Linux).
 
@@ -102,13 +102,13 @@ Keep in mind that modifying SELinux modes can impact system behavior and applica
 In simple words, these commands help you check the current SELinux enforcement status and change it if needed. SELinux provides extra security to Linux systems by controlling process and user access based on security policies.
 
 
-## `ifconfig`
+*  ## `ifconfig`
 
 - The `ifconfig` command is used to **configure** and **display** network interfaces on Unix-like operating systems, including Linux.
 - Running `ifconfig` without arguments provides information about all active network interfaces, including IP addresses and MAC addresses.
 - It offers a snapshot of the current network configuration, including both physical and virtual network interfaces.
 
-## `tcpdump -A -vvvv -s 9999 -i enX0 port 80 > /tmp/headers`
+*  ## `tcpdump -A -vvvv -s 9999 -i enX0 port 80 > /tmp/headers`
 
 - `tcpdump` is a **packet sniffing** tool used to **capture** and **analyze** network traffic in real-time.
 - `-A`: Prints packet content as ASCII, aiding analysis, especially for HTTP headers.
@@ -120,7 +120,7 @@ In simple words, these commands help you check the current SELinux enforcement s
 
 The combined command captures network packets on the specified interface, filtering for port 80 (HTTP traffic), and stores the ASCII packet data in `/tmp/headers`. Exercise caution when capturing packets, as it may involve sensitive information and require administrative privileges.
 
-## `httpd-tools` and `ab` (Apache Bench)
+*  ## `httpd-tools` and `ab` (Apache Bench)
 
 `httpd-tools` is a collection of utility programs that are commonly used in conjunction with the Apache HTTP Server (`httpd`). One of the tools included in this package is `ab` (Apache Bench), which is used for benchmarking and stress testing web servers.
 
