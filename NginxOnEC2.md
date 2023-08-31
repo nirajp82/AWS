@@ -108,7 +108,10 @@ In simple words, these commands help you check the current SELinux enforcement s
 - Running `ifconfig` without arguments provides information about all active network interfaces, including IP addresses and MAC addresses.
 - It offers a snapshot of the current network configuration, including both physical and virtual network interfaces.
 
-*  ## `tcpdump -A -vvvv -s 9999 -i enX0 port 80 > /tmp/headers`
+* `tcpdump -i enX0 port 80`: captures network traffic on interface enX0 (replace X with the appropriate interface number) for all packets using port 80. This command will capture and display network packets related to HTTP traffic, which typically runs on port 80.
+
+ 
+*   ## `tcpdump -A -vvvv -s 9999 -i enX0 port 80 > /tmp/headers`
 
 - `tcpdump` is a **packet sniffing** tool used to **capture** and **analyze** network traffic in real-time.
 - `-A`: Prints packet content as ASCII, aiding analysis, especially for HTTP headers.
