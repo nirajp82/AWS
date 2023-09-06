@@ -31,8 +31,8 @@
     }
 }
 ```
-  
-    ```nginx
+  * BackEnd Server Side:
+  ```nginx
       cd /etc/nginx/nginx.conf
 
       http {
