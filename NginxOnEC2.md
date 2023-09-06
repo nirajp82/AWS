@@ -40,8 +40,7 @@
                       '$status $body_bytes_sent "$http_referer" '
                       '"$http_user_agent" "$http_x_forwarded_for" "$host"';
         ...
-    ```
-
+  ```
 
 *  Customize or set HTTP headers before forwarding client requests to a backend server using Nginx's reverse proxy capabilities. `proxy_set_header Host $host`
 * `netstat -ntlp` Command
