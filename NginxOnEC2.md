@@ -17,6 +17,7 @@
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 *  View host file content: `cat /etc/hosts`
 *  List all installed package on system `rpm -qa | grep httpd-tools` - This command is used to query the RPM (Red Hat Package Manager) database to find out if the package httpd-tools is installed on your system.
+*  The md5sum command is used to calculate and display the MD5 checksum (hash) of a file. The MD5 checksum is a 128-bit hexadecimal value that represents the content of the file. It can be used to verify the integrity of a file by comparing it with a known, trusted MD5 checksum. ``` md5sum mydoc.conf ```
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
 *  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
    * Reverse Proxy Side:
