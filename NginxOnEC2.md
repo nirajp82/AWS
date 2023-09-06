@@ -17,7 +17,7 @@
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 *  View host file content: `cat /etc/hosts`
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
-## *  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
+*  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
    * Reverse Proxy Side:
      
 ```nginx
