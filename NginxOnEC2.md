@@ -16,6 +16,7 @@
 *  Get content of the page: `curl `
 *  Display the information about nginx related service in a hierarchical format `ps -ef --forest | grep nginx`
 *  View host file content: `cat /etc/hosts`
+*  List all installed package on system `rpm -qa | grep httpd-tools` - This command is used to query the RPM (Red Hat Package Manager) database to find out if the package httpd-tools is installed on your system.
 *  Validate the changes of nginx config file. This should be done as soon as changes is done and before restarting the server. `sudo nginx -t`
 *  Pass actual IP address of the client in http header named 'X-Client-IP' to a backend server using Nginx's reverse proxy capabilities.
    * Reverse Proxy Side:
