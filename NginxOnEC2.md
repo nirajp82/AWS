@@ -169,6 +169,48 @@ Remember to use `ab` responsibly, as excessive requests or improper usage can im
 
 Please note that while `ab` is a valuable tool, it might not perfectly replicate real-world scenarios, so it's recommended to consider other testing methods for a comprehensive performance analysis.
 
+Sure, here's a summary of the Linux commands `less`, `gzip`, and `ll`, along with examples:
+
+### **less**:
+   - **Description**: The `less` command is a pager program used to view text files one screen at a time, allowing you to navigate through large files more easily.
+   - **Usage**: `less [options] [file]`
+   - **Example**:
+     - View the contents of a text file:
+       ```
+       less myfile.txt
+       ```
+     - Scroll down: Press `Space` or `Page Down`.
+     - Scroll up: Press `b` or `Page Up`.
+     - Quit: Press `q`.
+
+### **gzip**:
+   - **Description**: The `gzip` command is used for file compression and decompression. It compresses files to save space and reduces data transfer time.
+   - **Usage**: `gzip [options] [file]`
+   - **Example**:
+     - Compress a file:
+       ```
+       gzip myfile.txt
+       ```
+     - Decompress a compressed file:
+       ```
+       gzip -d myfile.txt.gz
+       ```
+
+### **ll** (an alias for `ls -l`):
+   - **Description**: The `ll` command, commonly used as an alias for `ls -l`, displays detailed information about files and directories in a long format.
+   - **Usage**: `ll [directory]`
+   - **Example**:
+     - List files and directories in the current directory in long format:
+       ```
+       ll
+       ```
+     - List files and directories in a specific directory in long format:
+       ```
+       ll /path/to/directory
+       ```
+
+These commands are essential tools for viewing, compressing, and listing files and directories in a Linux terminal.
+
 
 
   
