@@ -5,6 +5,7 @@
    * 400: This is the permission mode that is being set. In this mode: The owner of the file (myfile.pem) is granted read (4) permission. No other user or group is granted any permission (0 for both).
 
 *  logs you into root with the root environment `sudo su`
+*  Display information about the operating system: `cat /etc/os-release`
 *  install nginx on the server `sudo amazon-linux-extras install nginx1` or `sudo yum install nginx`
 *  Check the status of Nginx `sudo systemctl status nginx`
 *  start the nginx server `sudo systemctl start nginx` or `sudo service nginx start`
