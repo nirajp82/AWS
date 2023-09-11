@@ -1,9 +1,8 @@
 * Connect to EC2 insance using SSH
   `ssh -i "My.pem" ec2-user@ec2-12-345-67-890.compute-1.amazonaws.com`
-*  Rerestrict access to sensitive files. `chmod 400 myfile.pem`
-  *  chmod: This is a command used to change file permissions.
-  *  400: This is the permission mode that is being set. In this mode:
-    *  The owner of the file (myfile.pem) is granted read (4) permission. No other user or group is granted any permission (0 for both).
+*  Rerestrict access to sensitive files. `chmod 400 myfile.pem`.
+   * chmod: This is a command used to change file permissions.
+   * 400: This is the permission mode that is being set. In this mode: The owner of the file (myfile.pem) is granted read (4) permission. No other user or group is granted any permission (0 for both).
 
 *  logs you into root with the root environment `sudo su`
 *  install nginx on the server `sudo amazon-linux-extras install nginx1` or `sudo yum install nginx`
