@@ -1,0 +1,17 @@
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\BasicLambda.deps.json
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\BasicLambda.runtimeconfig.json
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\BasicLambda.dll
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\BasicLambda.pdb
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\Amazon.Lambda.Core.dll
+C:\Projects\AWS\Lambda\BasicLambda\bin\Debug\net6.0\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.csproj.AssemblyReference.cache
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.AssemblyInfoInputs.cache
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.AssemblyInfo.cs
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.csproj.CoreCompileInputs.cache
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.csproj.CopyComplete
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.dll
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\refint\BasicLambda.dll
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.pdb
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\BasicLambda.genruntimeconfig.cache
+C:\Projects\AWS\Lambda\BasicLambda\obj\Debug\net6.0\ref\BasicLambda.dll
