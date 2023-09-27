@@ -10,6 +10,7 @@
 *  Check the status of Nginx `sudo systemctl status nginx`
 *  start the nginx server `sudo systemctl start nginx` or `sudo service nginx start`
 *  Restart the nginx service `sudo systemctl restart nginx`
+*  `sudo nginx -s reload`: NGINX will read the new configuration and attempt to apply it without disrupting active connections. It will gracefully shut down worker processes with the old configuration and start new worker processes with the new configuration. This process typically takes just a fraction of a second.
 *  Enable Nginx service to start at boot `sudo systemctl enable nginx`
 *  Check ersion of the nginx `nginx -V`
 *  test the Nginx configuration for syntax errors and validity: `nginx -t`
